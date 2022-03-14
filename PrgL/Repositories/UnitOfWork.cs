@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrgL.Repositories
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private readonly DataContext _context;
 
